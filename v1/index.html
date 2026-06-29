@@ -39,21 +39,49 @@
         <p class="hero-role">
           <span class="mono-label">DevSecOps Engineer</span>
         </p>
-        <p class="hero-desc">Embedding security into CI/CD pipelines and building resilient cloud-native infrastructure at scale.</p>
+        <p class="hero-desc">Security doesn't slow delivery. I build the pipelines that prove it.</p>
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">View work</a>
         </div>
       </div>
+
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-frame">
-          <img
-            src="https://picsum.photos/seed/server-infrastructure-dark/580/720"
-            alt=""
-            class="hero-img"
-            width="580"
-            height="720"
-          />
-          <div class="hero-frame-accent"></div>
+        <div class="hero-terminal">
+          <div class="term-bar">
+            <span class="term-dots"><i></i><i></i><i></i></span>
+            <span class="term-title">deploy.yml &middot; run #247 &middot; main</span>
+          </div>
+          <div class="term-body">
+            <div class="term-row">
+              <span class="t-pass">&#10003;</span>
+              <span class="t-cmd">trivy scan</span>
+              <span class="t-out">0 critical &nbsp;0 high</span>
+            </div>
+            <div class="term-row">
+              <span class="t-pass">&#10003;</span>
+              <span class="t-cmd">codeql analysis</span>
+              <span class="t-out">no findings</span>
+            </div>
+            <div class="term-row">
+              <span class="t-pass">&#10003;</span>
+              <span class="t-cmd">gitleaks scan</span>
+              <span class="t-out">no secrets detected</span>
+            </div>
+            <div class="term-row">
+              <span class="t-pass">&#10003;</span>
+              <span class="t-cmd">dependency-track</span>
+              <span class="t-out">sbom uploaded</span>
+            </div>
+            <div class="term-row">
+              <span class="t-pass">&#10003;</span>
+              <span class="t-cmd">deploy &rarr; aks</span>
+              <span class="t-out">3/3 pods running</span>
+            </div>
+            <div class="term-row term-row--prompt">
+              <span class="t-prompt">$</span>
+              <span class="term-cursor" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -66,37 +94,24 @@
       <div class="about-grid">
         <div class="about-left reveal">
           <h2 class="section-title">About</h2>
-          <p class="about-body">DevSecOps Engineer at MTN Software Solutions, building secure systems across the full software development lifecycle. I embed security into CI/CD pipelines, automate infrastructure at scale, and keep distributed systems observable and resilient in production.</p>
-          <p class="about-body">My background spans full-stack development through to cloud infrastructure, which means I can reason across the entire stack. I care about the depth of security practice - not just the tooling, but the culture that makes it stick.</p>
+          <p class="about-body">I'm a DevSecOps Engineer at MTN Software Solutions. Day to day that means owning the security of CI/CD pipelines across hundreds of repositories, keeping cloud infrastructure healthy, and making sure teams ship quickly without cutting corners on safety.</p>
+          <p class="about-body">I came up through full-stack development before moving into infrastructure and security. That background means I can follow a vulnerability from the application layer down to the network policy, and I care as much about the culture that makes security stick as the tooling itself.</p>
           <a href="mailto:smartkimlyn@gmail.com" class="about-email">smartkimlyn@gmail.com</a>
         </div>
         <div class="about-right reveal reveal-delay">
-          <div class="stats-grid">
-            <div class="stat">
-              <span class="stat-num">500+</span>
-              <span class="stat-label">Repos automated</span>
+          <div class="highlights">
+            <div class="hl">
+              <span class="hl-num">500+</span>
+              <p class="hl-text">repositories standardized with security quality gates at MTN Software Solutions</p>
             </div>
-            <div class="stat">
-              <span class="stat-num">80%</span>
-              <span class="stat-label">Efficiency gain</span>
+            <div class="hl">
+              <span class="hl-num">80%</span>
+              <p class="hl-text">improvement in organizational deployment efficiency through large-scale pipeline automation</p>
             </div>
-            <div class="stat">
-              <span class="stat-num">3</span>
-              <span class="stat-label">Certifications</span>
+            <div class="hl">
+              <span class="hl-num">Top 10%</span>
+              <p class="hl-text">of 200+ students at WeThinkCode_, Cape Town. AZ-900, ISC2 CC, SAFe certified.</p>
             </div>
-            <div class="stat">
-              <span class="stat-num">Top 10%</span>
-              <span class="stat-label">WeThinkCode_ cohort</span>
-            </div>
-          </div>
-          <div class="about-photo">
-            <img
-              src="https://picsum.photos/seed/server-room-cables/520/300"
-              alt="Infrastructure environment"
-              width="520"
-              height="300"
-              loading="lazy"
-            />
           </div>
         </div>
       </div>
@@ -168,15 +183,34 @@
 
         <!-- Featured -->
         <article class="project project-featured reveal">
-          <div class="project-img-wrap">
-            <img
-              src="https://picsum.photos/seed/cicd-pipeline-automation/1200/630"
-              alt="CI/CD pipeline automation at scale"
-              class="project-img"
-              width="1200"
-              height="630"
-              loading="lazy"
-            />
+          <div class="project-visual project-visual--pipeline" role="img" aria-label="CI/CD security pipeline log showing passing checks">
+            <div class="pv-inner">
+              <div class="pv-row">
+                <span class="pv-pass">&#10003;</span>
+                <span class="pv-cmd">trivy scan</span>
+                <span class="pv-out">0 critical &nbsp;&nbsp;0 high</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-pass">&#10003;</span>
+                <span class="pv-cmd">codeql analysis</span>
+                <span class="pv-out">no findings</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-pass">&#10003;</span>
+                <span class="pv-cmd">gitleaks scan</span>
+                <span class="pv-out">no secrets detected</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-pass">&#10003;</span>
+                <span class="pv-cmd">dependency-track</span>
+                <span class="pv-out">sbom uploaded</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-pass">&#10003;</span>
+                <span class="pv-cmd">promote &rarr; production</span>
+                <span class="pv-out">deploy successful</span>
+              </div>
+            </div>
           </div>
           <div class="project-body">
             <div class="project-text">
@@ -200,17 +234,21 @@
           </div>
         </article>
 
-        <!-- Half -->
+        <!-- Half: wavy-cards -->
         <article class="project project-half reveal">
-          <div class="project-img-wrap">
-            <img
-              src="https://picsum.photos/seed/playing-cards-game-ui/600/400"
-              alt="wavy-cards - browser blackjack game"
-              class="project-img"
-              width="600"
-              height="400"
-              loading="lazy"
-            />
+          <div class="project-visual project-visual--cards" role="img" aria-label="wavy-cards blackjack game">
+            <div class="card-stack" aria-hidden="true">
+              <div class="playing-card playing-card--back"></div>
+              <div class="playing-card playing-card--k">
+                <span class="pc-rank">K</span>
+                <span class="pc-suit pc-suit--red">&hearts;</span>
+              </div>
+              <div class="playing-card playing-card--a">
+                <span class="pc-rank">A</span>
+                <span class="pc-suit">&spades;</span>
+              </div>
+            </div>
+            <span class="bj-label">Blackjack</span>
           </div>
           <div class="project-body">
             <div class="project-text">
@@ -223,7 +261,7 @@
                 <span class="project-tag">CSS</span>
                 <span class="project-tag">HTML</span>
               </div>
-              <a href="#" class="project-arrow" aria-label="View wavy-cards project">
+              <a href="#" class="project-arrow" aria-label="View wavy-cards on GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M7 17L17 7M17 7H7M17 7V17"/>
                 </svg>
@@ -232,16 +270,34 @@
           </div>
         </article>
 
+        <!-- Half: SBOM -->
         <article class="project project-half reveal reveal-delay">
-          <div class="project-img-wrap">
-            <img
-              src="https://picsum.photos/seed/sbom-kubernetes-security/600/400"
-              alt="SBOM pipeline automation on Kubernetes"
-              class="project-img"
-              width="600"
-              height="400"
-              loading="lazy"
-            />
+          <div class="project-visual project-visual--sbom" role="img" aria-label="Kubernetes pod status showing Dependency-Track deployment">
+            <div class="pv-inner">
+              <div class="pv-row pv-row--header">
+                <span class="pv-col">NAME</span>
+                <span class="pv-col">STATUS</span>
+                <span class="pv-col pv-col--r">AGE</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-col pv-cmd">dep-track-api</span>
+                <span class="pv-col pv-pass">Running</span>
+                <span class="pv-col pv-col--r pv-out">2d</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-col pv-cmd">dep-track-fe</span>
+                <span class="pv-col pv-pass">Running</span>
+                <span class="pv-col pv-col--r pv-out">2d</span>
+              </div>
+              <div class="pv-row">
+                <span class="pv-col pv-cmd">dep-track-db</span>
+                <span class="pv-col pv-pass">Running</span>
+                <span class="pv-col pv-col--r pv-out">2d</span>
+              </div>
+              <div class="pv-row pv-row--prompt">
+                <span class="pv-out">$ kubectl get pods -n security</span>
+              </div>
+            </div>
           </div>
           <div class="project-body">
             <div class="project-text">
@@ -272,7 +328,7 @@
   <section class="section contact" id="contact" aria-label="Contact">
     <div class="container">
       <div class="contact-inner reveal">
-        <h2 class="contact-headline">Let's build something together.</h2>
+        <h2 class="contact-headline">Open to new roles and interesting problems.</h2>
         <a href="mailto:smartkimlyn@gmail.com" class="contact-email-link">smartkimlyn@gmail.com</a>
         <div class="contact-links" role="list" aria-label="Social links">
           <a href="#" class="contact-social" role="listitem">GitHub</a>
