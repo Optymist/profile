@@ -1,0 +1,9 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [
+      "v1/index.html"
+    ],
+    "ignoreValues": []
+  }
+}
